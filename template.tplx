@@ -1,0 +1,25 @@
+((*- extends 'article.tplx' -*))
+
+((* block author *))
+\author{Konstantin Gregor}
+((* endblock author *))
+
+((* block title *))
+\title{Presentation of Jupyter Notebooks}
+((* endblock title *))
+
+((* block maketitle *))
+\maketitle
+\tableofcontents
+((* endblock maketitle *))
+
+
+((* block input_group *))
+((* endblock input_group *))
+
+
+
+((* block bibliography *))
+\bibliographystyle{apalike}
+\bibliography{my_test_library}
+((* endblock bibliography *))

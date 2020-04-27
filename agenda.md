@@ -9,8 +9,10 @@ Show lpj output analysis
 show video in ndvi_bavaria/maisenlach.ipynb
 
 2. Markdown
+github readme is in markdown
 heading
-bullet points
+* bullet points
+  * within bullet points
 enumeration
 
 quotes
