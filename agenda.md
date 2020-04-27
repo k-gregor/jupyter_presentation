@@ -2,13 +2,32 @@
 write some text
 write some code
 the fields are called cells
+move cells around
+
+Show lpj output analysis
+
+show video in ndvi_bavaria/maisenlach.ipynb
 
 2. Markdown
 heading
 bullet points
 enumeration
+
+quotes
+
+> Two beers or not two beers
+
 table
-image ![yo](img/wednesday.jpg)
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | \$1600 |
+| col 2 is      | centered      |   \$12 |
+| zebra stripes | are neat      |    \$1 |
+
+![caption](img/zoom_meeting.png)
+
 code snippets with
 ```
 ```
@@ -18,6 +37,10 @@ Let's write a formula: $\sum_{i=10}^\infty i = y$
 $$
 \sum_{i=0}^\infty q^i = \frac{1}{1-q} , \forall q \in [0, 1)
 $$
+
+
+See more at: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#videos
+
 
 3. Kernels
 dozens of kernels, need to manually install them
@@ -32,8 +55,19 @@ settings -> slide type
 
 5. code
 code completion
-import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 --> complete
+
+plot stuff
+
+fig, ax = plt.subplots(1, 1, figsize=(10, 4))
+x = range(0, 10)
+plt.plot(x, np.sin(x))
+ax.set_title('sinus, obviously :-P')
+plt.show()
+
+now add %matplotlib widget at the top
 
 functions with parameter --> reusable code
 %matplotlib inline
@@ -45,15 +79,6 @@ def plot_my_sinus(a):
     plt.plot(x, np.sin(x))
     ax.set_title('sinus, obviously :-P')
     plt.show()
-
-5. Plots
-Interactive Plots
-%matplotlib widget
-fig, ax = plt.subplots(1, 1, figsize=(10, 4))
-x = range(0, 10)
-plt.plot(x, np.sin(x))
-ax.set_title('sinus, obviously :-P')
-plt.show()
 
 change  widget to inline
 
@@ -74,5 +99,13 @@ save file
 mess something up
 commands -> revert to checkpoint
 
+Introduction to version control
+
 Git: make sure everything is nice, then commit everything, then do a text change
 --> git status
+change only text --> ok
+
+change a p
+
+8. Collaboration
+mybinder.org
