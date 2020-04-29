@@ -47,7 +47,7 @@ See more at: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#vi
 3. Kernels
 dozens of kernels, need to manually install them
 R kernel (3 commands in rstudio)
-create r notebook
+create r notebook (top left: PLUS sign --> new launcher)
 data.frame(1, 2, 3)
 
 4. Slides
@@ -63,6 +63,7 @@ import matplotlib.pyplot as plt
 
 plot stuff
 
+import matplotlib.pyplot as plt
 fig, ax = plt.subplots(1, 1, figsize=(10, 4))
 x = range(0, 10)
 plt.plot(x, np.sin(x))
